@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Home</title>
+    <link rel="stylesheet" href="styale.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            overflow-x: hidden;
+        }
+        .car{
+            
+            width: auto;
+            height: 300px;
+            
+            display: flex;
+            justify-content: center;
+        }
+        .ss{
+            width: 500px;
+            height: 230px;
+            
+            
+        }
+        li{
+            text-decoration: none;
+            direction: none;
+           
+            
+        }
+        li::after{
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: lightblue;
+            margin: auto;
+            display: block;
+            transition: 1s;
+            
+        }
+        li:hover::after{
+            width: 100%;
+
+        }
+        li:hover{
+            color: orange;
+        }
+        a:hover{
+            color: orange;
+        }
+        a{
+            text-decoration: none;
+            color: royalblue;
+        }
+        
+
+
+        .box{          
+            margin-left: 600px;
+            
+        }
+        .send{
+        background-image: url(zzz.jpg);
+        width: 100%;
+        height: 600px;
+        background-position:center center;
+        background-size: cover;
+        text-align: center;
+        }
+        .ii{
+            color: rosybrown;
+            font-size: 80px;
+            text-align: center;
+           
+            text-decoration: none;
+        
+            
+            
+        }
+        .ii:hover{
+            color: aqua;
+        }
+       .oo{
+        font-size: 30px;
+        text-decoration: none;
+        padding-right: 300px;
+
+        }
+        .sw{
+            width: 580px;
+            height: 100px;
+            border-radius: 40px;
+            border: 1px solid white;
+            
+            
+            margin-left: 390px;
+           
+            
+            
+        
+            
+        }
+        .sw:hover{
+            border: 1px solid lightcyan;
+            background: lightcyan;
+            transition: 3s;
+        }
+      
+        /* .sw::after{
+            content: '';
+            width: 0;
+            height: 5px;
+            background-color: aquamarine;
+            margin: auto;
+            display: block;
+            transition: 4s;
+            
+
+        }  */
+        /* .sw:hover::after{
+
+            width: 100%;
+        } */
+
+        .last{
+            background-color: blueviolet;
+            height: 270px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .name{
+            width: 170px;
+        }
+        
+        .get{
+            font-size: 25px; text-decoration: none;
+             margin-left: 110px; 
+            color: brown; 
+            width: 100%;
+            height: 20px;
+            
+        
+        }
+        .oo::after{
+            content: '';
+            width: 0%;
+            height: 2px;
+            background-color: lightblue;
+            margin-left: 00px;
+            display: block;
+            
+            transition: 1s;
+            
+        }
+        .oo:hover::after{
+            width:28% ;
+
+        }
+        .get::after{
+            content: '';
+            width: 0;
+            height: 2px;
+            background-color: lightblue;
+            margin-left: 113px;
+            display: block;
+            
+            transition: 1s;
+        }
+        .get:hover::after{
+            width: 15%;
+        }
+       .contect{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+       } 
+       .contect .cn{
+
+        
+        width: 160px;
+        height: 40px;
+        background: orange;
+        border: none;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .4s ease;
+       } 
+    .contect .cn .a{
+        text-decoration: none;
+        color: black;
+        transition: .3s ease;
+    }
+    .cn:hover{
+        background: white;
+        color: green;
+    }
+    .contect .cn .a:hover{
+        color: green;
+    }
+    .back2{
+          
+
+        background:linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%) ,url(vin3.jpg);
+        height: 100vh;
+        
+
+        
+
+    }
+    .back2 h2{
+        width: 100%;
+        height: auto;
+        margin-left: 94vh;
+        justify-content: center;
+        color: white;
+    }
+    .back2 img{
+        
+        height: auto;
+        display: flex;
+        justify-content: center;
+      padding-left: 0px;
+        
+    }
+    .back2 em{
+        color: orange;
+        font-style: normal;
+    }
+    .back2 .h5{
+        width: 80%;
+        padding: 10px;
+
+        height: 70px;
+        
+        
+        overflow: auto;
+        color:white;
+        font-size: 16px;
+        margin-left: 100px;
+
+    }
+
+    .blog{
+        overflow: hidden;
+    }
+    .blog .blogb{
+    text-transform: capitalize; 
+    width: 300px;
+    padding: 30px 30px;
+    display: inline-block;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    font-size: 19px;
+    
+    letter-spacing: 0.5px;
+    font-weight: 550;
+    transition: all 0.3s;
+    display: block;
+    margin: 40px;
+    
+
+    }
+    .btn2 .btn3{
+        border: orange;
+        width: 300px;
+        height: 50px;
+        background: orange;
+        border: none;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .4s ease;
+        margin-left: 37px;
+       } 
+    .btn2:hover{
+        color: white;
+        background-color: white;
+       }
+    #come{
+        margin-top: -250px;
+       }
+    .back4{
+         background-image: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%) ,url(ccc.jpg);
+         height: 60vh;
+         background-size: cover;
+         background-position: center center;
+
+       }
+       .col{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            float: left;
+            justify-content: center;
+            justify-content: space-around;
+
+
+        }
+        .col1{
+            background-color: #fff;
+         border-radius: 5px;
+         box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+         padding: 15px;
+         margin-bottom: 30px;
+         width: 300px;
+         height: 350px;
+         border: lavender 2px solid;
+         overflow-y: hidden;
+           }
+        .carname{
+            font-weight: 800;
+            font-size: 23px;
+            margin-top: -5px;
+            margin-left: 18px;
+
+
+        } 
+        .rating{
+            font-weight: 00;
+            color:transparent ;
+            margin-top: -18px;
+            margin-left: 18px;
+
+        }  
+        .price{
+            font-weight: 400;
+            font-size: 22px;
+            margin-top: -4px;
+            margin-left: 18px;
+
+
+        }
+    footer{
+       margin-top: 100px;
+       width: 190vh;
+       padding: 100px 15%;
+       background: #333;
+       color: #efefef;
+       display: flex;
+    }  
+    footer div{
+        text-align: center;
+
+    }  
+    .col-2{
+        flex-grow: 2;
+    }
+    footer div h3{
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+    .col-1 a{
+      display: block;
+      text-decoration: none;
+      color: white;
+      margin: 14px;   
+    }
+    form input{
+        width: 400px;
+        height: 45px;
+        border-radius: 4px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        outline: none;
+    }
+    form button{
+        background: transparent;
+        border: 2px solid #fff;
+        color: #fff;
+        border-radius: 30px;
+        padding: 10PX 30PX;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .soc{
+        margin-top: 30px;
+
+    } 
+    .soc i {
+        font-size: 22px;
+        margin: 10px;
+        cursor: pointer;
+    }
+    .col .col1 img {
+            border: 2px solid black;
+        }
+
+
+
+
+  
+
+        
+        
+    </style>
+        
+    
+
+</head>
+<body>
+    <header>
+        <p  style="color: royalblue
+        ;"><i class="fa-solid fa-car fa-4x"></i></p>
+        <div class="nev">
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="bbb.html">Car</a></li>
+                <li><a href="home.html">Second Hand Car</a> </li>
+               
+                <li> <a href="nav.html">Contact Us</a>  </li>
+                
+            </ul>
+           
+        </div>
+        <p  style="color: royalblue
+        ;"><i class="fa-solid fa-car fa-4x"></i></p>
+    </header>
+    <br>
+    
+    
+    <div class="pp">
+        <h1 class="tt" style="color:  royalblue;">GET YOUR DREM CAR</h1> <br>
+        <a href="bbb.html" class="get" > GET START NOW</a>
+
+    </div>
+    <br>
+    <div>
+        <br><br>
+    <div style="text-align: center;">
+        <h2> <em style="color: orange; font-style: normal;"> CARS</em></h2><br>
+        <img src="vin2.png" alt="" ><br> <br>
+
+        
+ 
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quisquam corrupti ullam doloribus.</p>
+    </div>
+    <br><br>
+    <div class="col">
+        <div class="col1"> <img src="m3.jpg" alt="" style="width: 280px; height: 270px;margin-left: 10px;"> <p class="carname" >
+            Toyota Fortuner 
+        </p> <p class="rating">k   
+        
+        </p>
+             <p class="price">Rs32.40 - 50.34 Lakh* <a href="" style="text-decoration: none;color: red;">Book Now</a></p>  </div>
+             
+        <div class="col1"><img src="m1.jpg" alt="" style="width: 280px; height: 270px;margin-left: 10px;"> <p class="carname" >
+            Mahindra Bolero 
+        </p> <p class="rating"> <i class="fa fa-user" title="passegengers"> 5</i> <i class="fa-solid fa-star" ></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-sharp-half-stroke"></i>   
+        
+        </p>
+             <p class="price">Rs9.53 - 10.48 Lakh* <a href=""  style="text-decoration: none;color: red;">Book Now</a></p></div>
+        <div class="col1"><img src="m4.jpg" alt="" style="width: 280px; height: 270px;margin-left: 10px;"> <p class="carname" >
+            Mahindra Scorpio-N
+        </p> <p class="rating"> <i class="fa fa-user" title="passegengers"> 5</i> <i class="fa-solid fa-star" ></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-sharp-half-stroke"></i>   
+        
+        </p>
+             <p class="price">Rs11.99 - 23.90 Lakh*<a href=""  style="text-decoration: none;color: red;"> Book Now </a></p></div>
+    </div>
+
+
+
+
+
+
+    <br>
+    <div class="contect">
+        <button class="cn"><a href="" class="a">VIEW MORE</a></button>
+    </div>
+    
+
+<br>
+<div class="back2">
+    <br><br><br>
+    <h2> READ <em> ABOUT US</em></h2> <br> <br>
+    <img src="vin2.png" alt="" style="margin-left: 108vh;"><br><br><br>
+
+    <p class="h5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quos dolorum sunt quasi dolor, voluptatem veritatis, delectus earum totam .</p>
+        
+    <p class="h5">Lorem ipsum dolor sit amet consectetur, adikpisicing elit. Quidem quam magnam, iste unde at doloremque laudantium! Amet temporibus delectus exercitationem! Pariatur eum cum perspiciatis ab excepturi officia dolores itaque impedit?</p>
+    <p class="h5">Lorem ipsum dolor , soluta qui. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem quam magnam, iste unde at doloremque laudantium! Amet temporibus delectus exercitationem! Pariatur eum cum perspiciatis ab excepturi officia dolores itaque impedit?</p>
+
+</div>
+
+
+
+<div class="blog">
+    <BR></BR><BR>
+        
+    <h2 style="margin-left: 93vh; color: black;">READ OUR <em style="font-style: normal;color: orange;"> BLOG</em></h2>
+    
+    <br>><img src="vin2.png" alt="" style="margin-left: 105vh;"><br><br>
+    <p style="width: auto;height: 40px; margin-left: 5vh; text-align: center;">Lorem ipsum dolor sit amet consectetur  iusto, fugiat uscipit saepe inventore <br> nam voluptatem!</p>
+    <br><br><br>
+   
+    <div class="blogb">Lorem ipsu Sint, repellendus nostrum, in nulla obcaecati.</div>
+    <div class="blogb">  deleniti sint atque earum, facere error quod sapiente dicta at.</div>
+    <img src="BIN4.jpg" alt="" style="width: 800px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-left: 440px;
+    margin-top: -320px;   
+    
+">
+<h4 style="font-size: 23px;
+font-weight: 700;
+color: #232d39;
+letter-spacing: 0.5px;
+margin-bottom: 20px;
+margin-top: 30px;
+padding-left: 450px;
+padding-top: -50px;
+">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, nostrum. Eius</h4>
+<div class="btn2">
+    <button class="btn3" style="margin-left: 430px;margin-bottom: 30px;"> CONTINEU REDING</button> 
+ </div>
+ 
+    <div class="blogb" id="come"> magni ipsa vero amet  ab nisi, similique, accusamus error deserunt dolor?</div>
+     
+    <div class="btn2">
+       <button class="btn3"> READ MORE </button> 
+    </div>       
+<br><br><br>
+</div>
+<div class="back4">
+    <h2 style="color: white; text-align: center; padding-top: 20px;">SEND A US <em style="color:orange ; font-style: normal;"> MESSAGE</em></h2>
+    <P  style="color: white; text-align: center; padding-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipnulla veritatis rerum illo maxime ratione nemo aliquid reiciendis neque!</P>
+    <P style="color: white; text-align: center; padding-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipnulla veritatis rerum illo maxime ratione nemo aliquid reiciendis neque!</P>
+    <div><a href="nav.html"  style="display: inline-block;
+        font-size: 15px;
+        padding: 12px 20px;
+        background-color: #ed563b;
+        color: #fff;
+        text-align: center;
+        font-weight: 400;
+        text-transform: uppercase;
+        transition: all .3s;
+        margin-left: 550px;
+        margin-top: 30px
+        ;
+        border: #ed563b 2PX solid;
+    ">CONTACT US</a></div>
+</div>
+
+<footer>
+    <div class="col-1">
+        <h3>USEFUL LINKS</h3>
+        <a href="">About</a>
+
+        <a href="">Services</a>
+        <a href="">Contect</a>
+        <a href="">Blog</a>
+    </div>
+    <div class="col-2">
+        <h2>NEWSELTER</h2>
+        <form action="">
+            <input type="text" placeholder="Your Emali Address"><br>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <div class="col-2">
+        <h3>Contect</h3>
+        <p>MAHARASHTR,INDIA</p>
+        <div class="soc">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+</body>
+</html>

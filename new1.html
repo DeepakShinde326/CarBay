@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highe Budget Car</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            overflow-x: hidden;
+        }
+        header{
+            width: 100%;
+            height: 79px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            border-bottom: solid 1px;
+            box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+   
+
+            
+            
+        }
+        .nav{ 
+            text-align: center;
+        }
+        li{
+            float: left;
+            margin: 19px;
+            text-decoration: none;
+            list-style: none;
+        }
+        li::after{
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: lightblue;
+            margin: auto;
+            display: block;
+            transition: 1s;
+            
+        }
+        li:hover::after{
+            width: 100%;
+
+        }
+
+
+
+        .box{
+            width: auto;
+            height: 200px;
+            background-color: azure ;
+            
+        }
+        .car{
+            width: auto;
+            height: 300px;
+            
+            display: flex;
+            justify-content: center;
+            
+        }
+        .ss{
+            width: 500px;
+            height: 230px;
+            
+            
+        }
+        .last{
+            background-color: blueviolet;
+            height: 270px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .name{
+            width: 170px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: orange ;
+        }
+
+        li{
+            text-decoration: none;
+            list-style: none;
+            
+        }
+        li:hover{
+            color: orange;
+        }
+        a:hover{
+            color: orange;
+        }
+        a{
+            text-decoration: none;
+            color: royalblue;
+        }  
+        .bye{
+            color: red; text-decoration: none;
+        } 
+        .bye:hover{
+            color: green;
+        } 
+        .col{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            float: left;
+            justify-content: center;
+            justify-content: space-around;
+
+
+        }
+        .col1{
+            background-color: #fff;
+         border-radius: 5px;
+         box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+         padding: 15px;
+         margin-bottom: 30px;
+         width: 300px;
+         height: 380px;
+         border: lavender 2px solid;
+           }
+        .carname{
+            font-weight: 800;
+            font-size: 23px;
+            margin-top: -5px;
+            margin-left: 18px;
+
+
+        } 
+        .rating{
+            font-weight: 400;
+            color: gold;
+            margin-top: -px;
+            margin-left: 18px;
+        }  
+        .price{
+            font-weight: 400;
+            font-size: 22px;
+            
+            margin-left: 18px;
+
+
+        }
+        .pagination {
+  display: inline-block;
+  margin-left: 520px;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+footer{
+    margin-top: 100px;
+
+       width: 1000px;
+       padding: 100px 15%;
+       background: #333;
+       color: #efefef;
+       display: flex;
+    }  
+    footer div{
+        text-align: center;
+
+    }  
+    .col-2{
+        flex-grow: 2;
+    }
+    footer div h3{
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+    .col-1 a{
+      display: block;
+      text-decoration: none;
+      color: white;
+      margin: 14px;   
+    }
+    form input{
+        width: 400px;
+        height: 45px;
+        border-radius: 4px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        outline: none;
+    }
+    form button{
+        background: transparent;
+        border: 2px solid #fff;
+        color: #fff;
+        border-radius: 30px;
+        padding: 10PX 30PX;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .soc{
+        margin-top: 30px;
+
+    } 
+    .soc i {
+        font-size: 22px;
+        margin: 10px;
+        cursor: pointer;
+    }
+    .back2{
+            background:linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%) ,url(car3.jpg);
+
+            background-position: center center;
+            background-size: cover;
+            
+            height:300px;
+            text-align: center;
+        
+            
+        }
+    
+    .back2 em{
+        color: orange;
+        font-style: normal;
+    }
+    .back2 .h5{       
+        
+        color:white;
+        font-size: 16px;
+    
+
+    }
+    .back2 h2{       
+        padding-top: 30px;
+        
+        font-size: 36px;
+        color: white;
+    
+
+    }
+
+    .col .col1 img {
+            border: 2px solid black;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <p  style="color: royalblue
+        ;"><i class="fa-solid fa-car fa-4x"></i></p>
+        <div class="nev">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="bbb.html">Car</a></li>
+                <li><a href="home.html">Second Hand Car</a> </li>
+               
+                <li> <a href="nav.html">Contact Us</a>  </li>
+            </ul>
+        </div>
+        <p  style="color: royalblue
+        ;"><i class="fa-solid fa-car fa-4x"></i></p>
+    </header>
+
+    <br><br><br><br>
+    <div class="back2">
+        <h2><em> CARS</em></h2> <br> <br>
+        <p class="h5">
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quos dolorum sunt quasi dolor, voluptatem
+              veritatis, delectus earum totam .</p> <BR>
+        <p class="h5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quos dolorum sunt quasi dolor, voluptatem veritatis, delectus earum totam .</p>
+
+
+
+        
+        </div>
+
+    
+    <br><br><br>
+
+    
+
+    <div class="box" style="text-align: center;">
+        <h1>New Car FAQs
+        </h1>
+        
+        <p>
+            For cars from Rs 35 Lakh to Rs 50 Lakh, the Indian four-wheeler market has 24 new products on sale from different car brands. Among them Toyota Fortuner (Rs. 32.40 - 49.57 Lakh), Skoda Kodiaq (Rs. 37.49 - 39.99 Lakh), Mercedes-Benz GLA (Rs. 44.90 - 48.90 Lakh) are amongst the most popular cars in this price bracket. If you want to know more about the new cars, upcoming cars or latest cars prices in your city, offers, variants, specifications, pictures, car loan, emi calculator, mileage, car comparison and reviews, please select the car model you’re interested in the options below. Also, get car insurance renewed and save upto 75% using InsuranceDekho.com car insurance premium calculator.
+
+
+        </p>
+    </div>
+    <br><br><br>
+    <div class="col">
+        <div class="col1"> <img src="13.jpg" alt="" style="width: 280px; height: 270px;margin-left: 10px;"> <p class="carname" >
+            Toyota Fortuner
+        </p> <p class="rating"> <i class="fa fa-user" title="passegengers"> 5</i> <i class="fa-solid fa-star" ></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-sharp-half-stroke"></i>   
+        
+        </p>
+             <p class="price">Rs.32.59 - 50.34 Lakh* <a href="" style="text-decoration: none;color: red;">Book Now</a></p>  </div>
+             
+        <div class="col1"><img src="14.jpg" alt="" style="width: 280px; height: 270px;margin-left: 10px;"> <p class="carname" >
+            Mercedes-Benz GLA
+        </p> <p class="rating"> <i class="fa fa-user" title="passegengers"> 5</i> <i class="fa-solid fa-star" ></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-sharp-half-stroke"></i>   
+        
+        </p>
+             <p class="price">Rs.44.90 - 48.90 Lakh* <a href=""  style="text-decoration: none;color: red;">Book Now</a></p></div>
+        <div class="col1"><img src="15.jpg" alt="" style="width: 280px; height: 270px;margin-left: 10px;"> <p class="carname" >
+            BMW X1 car
+        </p> <p class="rating"> <i class="fa fa-user" title="passegengers"> 5</i> <i class="fa-solid fa-star" ></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-sharp-half-stroke"></i>   
+        
+        </p>
+             <p class="price">Rs.41.50 - 44.50 Lakh* <a href=""  style="text-decoration: none;color: red;">Book Now</a></p></div>
+    </div>
+   
+    <BR></BR>
+    <div class="col">
+        <div class="col1"> <img src="16.jpg" alt="" style="width: 280px; height: 270px;margin-left: 10px;"> <p class="carname" >
+            Toyota Hilux 
+        </p> <p class="rating"> <i class="fa fa-user" title="passegengers"> 5</i> <i class="fa-solid fa-star" ></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-sharp-half-stroke"></i>   
+        
+        </p>
+             <p class="price">Rs.33.99 - 36.80 Lakh*
+                <a href="" style="text-decoration: none;color: red;">Book Now</a></p>  </div>
+             
+        <div class="col1"><img src="17.jpg" alt="" style="width: 280px; height: 270px;margin-left: 10px;"> <p class="carname" >
+            MG Gloster
+        </p> <p class="rating"> <i class="fa fa-user" title="passegengers"> 5</i> <i class="fa-solid fa-star" ></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-sharp-half-stroke"></i>   
+        
+        </p>
+             <p class="price">Rs.32.00 - 40.78 Lakh* <a href=""  style="text-decoration: none;color: red;">Book Now</a></p></div>
+        <div class="col1"><img src="18.jpg" alt="" style="width: 280px; height: 270px;margin-left: 10px;"> <p class="carname" >
+            Skoda Kodiaq
+        </p> <p class="rating"> <i class="fa fa-user" title="passegengers"> 5</i> <i class="fa-solid fa-star" ></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-sharp-half-stroke"></i>   
+        
+        </p>
+             <p class="price">Rs.37.49 - 39.99 Lakh*
+                <a href=""  style="text-decoration: none;color: red;">Book Now</a></p></div>
+    </div>
+
+   <br>
+   <div class="pagination">
+    <a href="#">&laquo;</a>
+     <a href="bbb.html">1</a>
+     <a  href="new.html">2</a>
+    <a href="new1.html">3</a>
+
+     <a  href="#">&raquo;</a>
+</div>
+<footer>
+    <div class="col-1">
+        <h3>USEFUL LINKS</h3>
+        <a href="">About</a>
+
+        <a href="">Services</a>
+        <a href="">Contect</a>
+        <a href="">Blog</a>
+    </div>
+    <div class="col-2">
+        <h2>NEWSELTER</h2>
+        <form action="">
+            <input type="text" placeholder="Your Emali Address"><br>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <div class="col-2">
+        <h3>Contect</h3>
+        <p>MAHARASHTR,INDIA</p>
+        <div class="soc">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+    </div>
+
+</footer>
+
+  
+
+</body>
+</html>

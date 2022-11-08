@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+<style>
+     *{
+            padding: 0px;
+            margin: 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+           
+        }
+
+    header{
+            width: 100%;
+            height: 79px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            border-bottom: solid 1px;
+            box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+   
+
+            
+            
+        }
+        .nav{ 
+            text-align: center;
+        }
+        li{
+            float: left;
+            margin: 19px;
+            text-decoration: none;
+            list-style: none;
+            
+        }
+        li::after{
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: lightblue;
+            margin: auto;
+            display: block;
+            transition: 1s;
+            
+        }
+        li:hover::after{
+            width: 100%;
+
+        }    
+   
+    .a{ padding-top: 250px;
+        color: orange;
+        font-size: 60px;
+    }
+    .b{
+        font-size: 30px;
+        color: blueviolet;
+    }
+    p{
+        font-size: 15px;
+        
+    }
+    .last{
+            background-color: blueviolet;
+            height: 270px;
+            display: flex;
+            justify-content: space-around;
+        }
+    .name{
+            width: 170px;
+        }
+        
+    li{
+            text-decoration: none;
+            
+        }
+    li:hover{
+            color: orange;
+        }
+    a:hover{
+            color: orange;
+        }
+    a{
+            text-decoration: none;
+            color: royalblue;
+        }
+    .back2{
+            background:linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%) ,url(ccc.jpg);
+
+            background-position: center center;
+            background-size: cover;
+            height:300px;
+            text-align: center;
+            
+        }
+    
+    .back2 em{
+        color: orange;
+        font-style: normal;
+    }
+    .back2 .h5{       
+        
+        color:white;
+        font-size: 16px;
+    
+
+    }
+    .back2 h2{       
+        padding-top: 30px;
+        
+        font-size: 36px;
+        color: white;
+    
+
+    }
+    .blog{
+        overflow: hidden;
+    }
+    .blog .blogb{
+    text-transform: capitalize; 
+    width: 300px;
+    padding: 30px 30px;
+    display: inline-block;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    font-size: 19px;
+    
+    letter-spacing: 0.5px;
+    font-weight: 550;
+    transition: all 0.3s;
+    display: block;
+    margin: 40px;
+    
+
+    }
+    footer{
+        margin-top: 100px;
+
+       width: 1000px;
+       padding: 100px 15%;
+       background: #333;
+       color: #efefef;
+       display: flex;
+    }  
+    footer div{
+        text-align: center;
+
+    }  
+    .col-2{
+        flex-grow: 2;
+    }
+    footer div h3{
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+    .col-1 a{
+      display: block;
+      text-decoration: none;
+      color: white;
+      margin: 14px;   
+    }
+    form input{
+        width: 400px;
+        height: 45px;
+        border-radius: 4px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        outline: none;
+    }
+    form button{
+        background: transparent;
+        border: 2px solid #fff;
+        color: #fff;
+        border-radius: 30px;
+        padding: 10PX 30PX;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .soc{
+        margin-top: 30px;
+
+    } 
+    .soc i {
+        font-size: 22px;
+        margin: 10px;
+        cursor: pointer;
+    }
+    .continer{
+            text-align: center;
+            background: #f5f5f5;
+        }
+        .heder{
+            padding-top: 10px;
+        
+            font-size: 20px;
+            margin: auto;
+            line-height: 50px;
+        }
+        .sub{
+            max-width: 1200px;
+            margin: auto;
+            padding: 48px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .team{
+            margin: 20px;
+            padding: 22px;
+            max-width: 30%;
+            transition: 0.4s;
+            box-sizing: border-box;
+        }
+        .team:hover{
+            background: #ddd;
+        }
+        .team img{
+            height: 200px;
+            width: 200px;
+        }
+        .name{
+            padding: 12px;
+            padding-left: 76px;
+            font-weight: bold;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-align: center;
+
+        }
+        .dise{
+            font-style: italic;
+           
+
+        }
+        .about{
+            margin: 20px 0;
+            font-weight: lighter;
+            color: black;
+        }
+        .social a{
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            transition: 4s;
+
+
+        }
+        .social a i{
+            color: black;
+        }
+    
+</style>
+</head>
+<body>
+    <header>
+        <p  style="color: royalblue
+        ;"><i class="fa-solid fa-car fa-4x"></i></p>
+        <div class="nev">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nav.html">About Us</a></li>
+                <li><a href="bbb.html">Car</a></li>
+                <li><a href="home.html">Second Hand Car</a> </li>
+               
+                <li> <a href="nav.html">Contact Us</a>  </li>
+            </ul>
+        </div>
+        <p  style="color: royalblue
+        ;"><i class="fa-solid fa-car fa-4x"></i></p>
+    </header>
+    <br><br><br><br>
+    <div class="back2">
+        <h2> LERN MORE  <em> ABOUT US</em></h2> <br> <br>
+        <p class="h5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quos dolorum sunt quasi dolor, voluptatem veritatis, delectus earum totam .</p>
+
+
+
+        
+        </div>
+    <br><br><br><br>
+    <div class="blog">
+        <BR></BR><BR>
+            
+        
+        <br><br><br>
+       
+        <div class="blogb"> OUR  GOOLS</div>
+        <img src="ma.jpg" alt="" style="width: 800px;
+        overflow: hidden;
+        border-radius: 5px;
+        margin-left: 440px;
+       margin-top: -320px;   
+        
+    ">
+    <h4 style="font-size: 24px;
+    font-weight: 700;
+    color: #232d39;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    padding-left: 420px;
+    padding-top: -50px;
+    color: royalblue;" >OUR GOOLS</h4>
+   
+    <h4 style="font-size: 14px;
+    font-weight: 300;
+    color: #232d39;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    padding-left: 420px;
+    padding-top: -50px;
+    ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum eaque nam, quas, cupiditate soluta accusantium sed adipisci rem magnam animi a unde obcaecati velit quod ipsa non quibusdam ducimus officia.</h4>
+   <h4 style="font-size: 14px;
+   font-weight: 300;
+   color: #232d39;
+   letter-spacing: 0.5px;
+   margin-bottom: 20px;
+   margin-top: 30px;
+   padding-left: 420px;
+   padding-top: -50px;
+   ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis enim tenetur similique repudiandae corrupti molestias minus, fugit eaque earum mollitia cupiditate odio fuga facere modi, aliquam, error velit eum culpa. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum eaque nam, quas, cupiditate soluta accusantium sed adipisci rem magnam animi a unde obcaecati velit quod ipsa non quibusdam ducimus officia.</h4>
+   <h4 style="font-size: 14px;
+   font-weight: 300;
+   color: #232d39;
+   letter-spacing: 0.5px;
+   margin-bottom: 20px;
+   margin-top: 30px;
+   padding-left: 420px;
+   padding-top: -50px;
+   ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum eaque nam, quas, cupiditate soluta accusantium sed adipisci rem magnam animi a unde obcaecati velit quod ipsa non quibusdam ducimus officia.</h4>
+  
+  <br><br><br><br>
+  <div class="blog">
+      <BR></BR><BR>
+          
+      
+      <br><br><br>
+     
+      <div class="blogb"> OUR WORK</div>
+      <img src="work1.jpg" alt="" style="width: 800px;
+      overflow: hidden;
+      border-radius: 5px;
+      margin-left: 440px;
+     margin-top: -320px;   
+      
+  ">
+  <h4 style="font-size: 24px;
+  font-weight: 700;
+  color: #232d39;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  padding-left: 420px;
+  padding-top: -50px;
+  color: royalblue;" > OUR WORK</h4>
+ 
+  <h4 style="font-size: 14px;
+  font-weight: 300;
+  color: #232d39;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  padding-left: 420px;
+  padding-top: -50px;
+  ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum eaque nam, quas, cupiditate soluta accusantium sed adipisci rem magnam animi a unde obcaecati velit quod ipsa non quibusdam ducimus officia.</h4>
+ <h4 style="font-size: 14px;
+ font-weight: 300;
+ color: #232d39;
+ letter-spacing: 0.5px;
+ margin-bottom: 20px;
+ margin-top: 30px;
+ padding-left: 420px;
+ padding-top: -50px;
+ ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis enim tenetur similique repudiandae corrupti molestias minus, fugit eaque earum mollitia cupiditate odio fuga facere modi, aliquam, error velit eum culpa. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum eaque nam, quas, cupiditate soluta accusantium sed adipisci rem magnam animi a unde obcaecati velit quod ipsa non quibusdam ducimus officia.</h4>
+ <h4 style="font-size: 14px;
+ font-weight: 300;
+ color: #232d39;
+ letter-spacing: 0.5px;
+ margin-bottom: 20px;
+ margin-top: 30px;
+ padding-left: 420px;
+ padding-top: -50px;
+ ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum eaque nam, quas, cupiditate soluta accusantium sed adipisci rem magnam animi a unde obcaecati velit quod ipsa non quibusdam ducimus officia.</h4>
+
+            
+    <br><br><br>
+    <div class="continer">
+        <div class="heder">
+            <h1 style="color:green ;">
+                 TEAM
+            </h1>
+        </div>
+        <div class="sub">
+        <div class="team">
+            <img src="pic1.svg" alt="" >
+            <div class="name">Deepak Shinde</div>
+            <div class="dise"> Head</div>
+            <div class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ad iusto nulla omnis optio! Nisi.</div>
+                <div class="social">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                    <a href=""> <i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+
+                </div>
+        </div>
+
+        <br>
+        <div class="team">
+            <img src="pic2.svg" alt="" >
+            <div class="name"> Rakhi Shinde </div>
+            <div class="dise">Manager</div>
+            <div class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ad iusto nulla omnis optio! Nisi.</div>
+                <div class="social">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                    <a href=""> <i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+
+                </div>
+        </div>
+        
+        <div class="team">
+            <img src="pic1.svg" alt="" >
+            <div class="name">Rakesh Shinde</div>
+            <div class="dise">Worker</div>
+            <div class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ad iusto nulla omnis optio! Nisi.</div>
+                <div class="social">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                    <a href=""> <i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+        </div>
+    </div>
+    </div>
+
+
+    <br>
+    </div>
+    <footer>
+        <div class="col-1">
+            <h3>USEFUL LINKS</h3>
+            <a href="">About</a>
+    
+            <a href="">Services</a>
+            <a href="">Contect</a>
+            <a href="">Blog</a>
+        </div>
+        <div class="col-2">
+            <h2>NEWSELTER</h2>
+            <form action="">
+                <input type="text" placeholder="Your Emali Address"><br>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <div class="col-2">
+            <h3>Contect</h3>
+            <p>MAHARASHTR,INDIA</p>
+            <div class="soc">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+            
+   
+   
+
+</body>
+</html>
